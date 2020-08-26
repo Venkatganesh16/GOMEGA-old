@@ -1,0 +1,7 @@
+.dropdown-content a:hover {background-color: #7dc919;}
+.menu-item {
+    font-size: 20px;
+    margin-right: 15px;
+    font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
+    color: #285A84 !important;
+}
