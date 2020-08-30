@@ -8,81 +8,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts/tableGenerator.js"></script>
     <title>Document</title>
-    <style>
-      .tg  
-{   
-    border:none;
-    border-collapse:collapse;
-    border-color:#ccc;
-    margin-left: auto;
-    margin-top: 10%;
-    margin-right: 2%;
-}
-    .tg td{
-        background-color:#fff;
-        border-color:#ccc;
-        border-style:solid;
-        border-width:0px;
-        color:#333;
-      font-family:Arial, sans-serif;
-      font-size:18px;
-      font-weight:bold;
-      overflow:hidden;
-      padding-left: 80px;
-      padding-right: 80px;
-      padding-top: 25px;
-      word-break:normal;
-    }
-    .tg th{
-        background-color:#285A84;
-        border-color:#ccc;
-        border-style:solid;
-        border-width:0px;
-        color:white;
-      font-family:Arial, sans-serif;
-      font-size:20px;
-      font-weight:bold;
-      overflow:hidden;
-      padding:20px 20px;
-      word-break:normal;
-    }
-    .tg .tg-l2t8{
-        border-color:solid 2px;
-        border-width: 2px;
-        border-color: black;
-        border-style: outset;
-        font-family:"Arial Black", Gadget, sans-serif !important;
-        font-weight:bold;
-        padding-left: 8%;
-        vertical-align:top
-    }
-    .tg .tg-5ryf{
-        border-width: 2px;
-        border-color:black;
-        border-style: solid;
-        background: #C2EF7E;
-        font-family:"Courier New", Courier, monospace !important;
-        font-weight:bold;
-        vertical-align:top
-    }
-    .tg .tg-8b46{
-        border-width: 2px;
-        border-color:black;
-        border-style: solid;
-        background: #C2EF7E;
-        font-family:"Courier New", Courier, monospace !important;
-        font-weight:bold;
-        vertical-align:top;
-    }
-    .whatsapp h5 {
-        color: white;
-        background: #20b20f;
-        padding: 12px;
-        border-radius: 10px;
-}
-    </style>
-</head>
+    <link rel="stylesheet" href="styles/order.css">
 <body>
   <div class="container">
     <div class="menu">
@@ -95,7 +23,7 @@
                 <div class="collapse navbar-collapse expanded-menu" id="navbarCollapse">
                     <ul class="navbar-nav" style="padding-left: 6%;">
                         <a class="navbar-brand" href="index.html">
-                            <img src="Original on Transparent.png" width="80" height="60" alt="">
+                            <img src="assets/original-logo.png" width="80" height="60" alt="">
                           </a>
                         <li class="nav-item" style="padding-top: 3%">
                         <a class="nav-link menu-item" style="color: #285A84;" href="index.html"><b>HOME</b></a>
@@ -108,9 +36,9 @@
                             <b>OUR PRODUCTS</b>
                             </a>
                             <div class="dropdown-menu dropdown-content" aria-labelledby="navbarDropdownMenuLink" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut" style="background-color: #C2EF7E;">
-                            <a class="dropdown-item menu-item" style="font-size: 110%; color: #285A84;" href="dates.html"><b>DATES</b></a>
-                            <a class="dropdown-item menu-item" style="font-size: 110%; color: #285A84;" href="chocolates.html"><b>CHOCOLATES</b></a>
-                            <a class="dropdown-item menu-item" style="font-size: 110%; color: #285A84;" href="almonds.html"><b>ALMONDS</b></a>
+                            <a class="dropdown-item menu-item" style="font-size: 110%; color: #285A84;" href="products/dates.html"><b>DATES</b></a>
+                            <a class="dropdown-item menu-item" style="font-size: 110%; color: #285A84;" href="products/chocolates.html"><b>CHOCOLATES</b></a>
+                            <a class="dropdown-item menu-item" style="font-size: 110%; color: #285A84;" href="products/almonds.html"><b>ALMONDS</b></a>
                             </div>
                         </li>
                         <li class="nav-item" style="padding-top: 3%">
@@ -127,447 +55,24 @@
 </div>
     <div class="row">
       <div class="col-12 col-md-8 order-md-2">
-        <table class="tg">
+        <table class="tg table table-bordered">
           <thead>
             <tr>
-              <th class="tg-l2t8">Spices</th>
-              <th class="tg-l2t8">100gms</th>
-              <th class="tg-l2t8">200gms</th>
-              <th class="tg-l2t8">500gms</th>
+              <th class="th">Spices</th>
+              <th class="th">100gms</th>
+              <th class="th">200gms</th>
+              <th class="th">500gms</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td class="tg-8b46">Elachi</td>
-              <td class="tg-8b46">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">340
-                  </label>
-                </div>
-              </td>
-              <td class="tg-8b46">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">680
-                  </label>
-                </div>
-              </td>
-              <td class="tg-8b46"><div class="form-check">
-                <label class="form-check-label" for="check1">
-                  <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">1700
-                </label>
-              </div></td>
-            </tr>
-            <tr>
-              <td class="tg-5ryf">Dal Chini</td>
-              <td class="tg-5ryf">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">38
-                  </label>
-                </div>
-              </td>
-              <td class="tg-5ryf">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">76
-                  </label>
-                </div>
-              </td>
-              <td class="tg-5ryf">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">190
-                  </label>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="tg-8b46">Lavang</td>
-              <td class="tg-8b46">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">90
-                  </label>
-                </div>  
-              </td>
-              <td class="tg-8b46">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">180
-                  </label>
-                </div>
-              </td>
-              <td class="tg-8b46">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">450
-                  </label>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="tg-5ryf">Shajeera</td>
-              <td class="tg-5ryf">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">90
-                  </label>
-                </div>
-              </td>
-              <td class="tg-5ryf">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">180
-                  </label>
-                </div>
-              </td>
-              <td class="tg-5ryf">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">450
-                  </label>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="tg-8b46">Jaifhal</td>
-              <td class="tg-8b46">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">120
-                  </label>
-                </div>
-              </td>
-              <td class="tg-8b46">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">240
-                  </label>
-                </div>
-              </td>
-              <td class="tg-8b46">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">600
-                  </label>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="tg-5ryf">Javatri</td>
-              <td class="tg-5ryf">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">30
-                  </label>
-                </div>
-              </td>
-              <td class="tg-5ryf">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">60
-                  </label>
-                </div>
-              </td>
-              <td class="tg-5ryf"><div class="form-check">
-                <label class="form-check-label" for="check1">
-                  <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">150
-                </label>
-              </div></td>
-            </tr>
-            <tr>
-              <td class="tg-8b46">Jeera</td>
-              <td class="tg-8b46">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">24
-                  </label>
-                </div>
-              </td>
-              <td class="tg-8b46"><div class="form-check">
-                <label class="form-check-label" for="check1">
-                  <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">48
-                </label>
-              </div></td>
-              <td class="tg-8b46"><div class="form-check">
-                <label class="form-check-label" for="check1">
-                  <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">120
-                </label>
-              </div></td>
-            </tr>
-            <tr>
-              <td class="tg-5ryf">Dhaniya</td>
-              <td class="tg-5ryf">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">18
-                  </label>
-                </div>
-              </td>
-              <td class="tg-5ryf">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">36
-                  </label>
-                </div>
-              </td>
-              <td class="tg-5ryf">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">90
-                  </label>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="tg-8b46">Rai</td>
-              <td class="tg-8b46">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">8
-                  </label>
-                </div>
-              </td>
-              <td class="tg-8b46">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">16
-                  </label>
-                </div>
-              </td>
-              <td class="tg-8b46">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">40
-                  </label>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="tg-5ryf">Mehti</td>
-              <td class="tg-5ryf">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">11
-                  </label>
-                </div>
-              </td>
-              <td class="tg-5ryf">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">22
-                  </label>
-                </div>
-              </td>
-              <td class="tg-5ryf">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">55
-                  </label>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="tg-8b46">Tilli</td>
-              <td class="tg-8b46">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">14
-                  </label>
-                </div>
-              </td>
-              <td class="tg-8b46">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">28
-                  </label>
-                </div>
-              </td>
-              <td class="tg-8b46">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">70
-                  </label>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="tg-5ryf">Khuskus</td>
-              <td class="tg-5ryf">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">140
-                  </label>
-                </div>
-              </td>
-              <td class="tg-5ryf">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">280
-                  </label>
-                </div>
-              </td>
-              <td class="tg-5ryf">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">700
-                  </label>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="tg-8b46">Khopra</td>
-              <td class="tg-8b46">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">22
-                  </label>
-                </div>
-              </td>
-              <td class="tg-8b46">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">44
-                  </label>
-                </div>
-              </td>
-              <td class="tg-8b46">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">110
-                  </label>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="tg-5ryf">Palli</td>
-              <td class="tg-5ryf">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">12
-                  </label>
-                </div>
-              </td>
-              <td class="tg-5ryf">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">24
-                  </label>
-                </div>
-              </td>
-              <td class="tg-5ryf">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">60
-                  </label>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="tg-8b46">Sabudana</td>
-              <td class="tg-8b46">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">8
-                  </label>
-                </div>
-              </td>
-              <td class="tg-8b46">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">16
-                  </label>
-                </div>
-              </td>
-              <td class="tg-8b46">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">40
-                  </label>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="tg-8b46">Kali Mirchi</td>
-              <td class="tg-8b46">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">58
-                  </label>
-                </div>
-              </td>
-              <td class="tg-8b46">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">116
-                  </label>
-                </div>
-              </td>
-              <td class="tg-8b46">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">290
-                  </label>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="tg-8b46">Sonth</td>
-              <td class="tg-8b46">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">58
-                  </label>
-                </div>
-              </td>
-              <td class="tg-8b46">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">116
-                  </label>
-                </div>
-              </td>
-              <td class="tg-8b46">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">290
-                  </label>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="tg-5ryf">Mota Saunf</td>
-              <td class="tg-5ryf">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">25
-                  </label>
-                </div>
-              </td>
-              <td class="tg-5ryf">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">50
-                  </label>
-                </div>
-              </td>
-              <td class="tg-5ryf">
-                <div class="form-check">
-                  <label class="form-check-label" for="check1">
-                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something">125
-                  </label>
-                </div>
-              </td>
-            </tr>
-          </tbody>
+            <tbody>
+<!--            to be filled by the script-->
+            </tbody>
           </table>
         </div>
         <div class="col-md-4 order-md-1 d-none d-md-block">
-          <img style="padding-left: 20%; padding-top: 11%;"width="80%" height="35%" src="dalchini.jpg">
-          <img style="padding-left: 20%; padding-top: 11%;"width="80%" height="35%" src="elachi.jpg">
-          <img style="padding-left: 20%; padding-top: 11%;"width="80%" height="30%" src="Cloves.png">
+          <img style="padding-left: 20%; padding-top: 11%;"width="80%" height="35%" src="assets/dalchini.jpg">
+          <img style="padding-left: 20%; padding-top: 11%;"width="80%" height="35%" src="assets/elachi.jpg">
+          <img style="padding-left: 20%; padding-top: 11%;"width="80%" height="30%" src="assets/Cloves.png">
         </div>
     </div>
     <div class="row">
@@ -576,6 +81,27 @@
                 <h5><i class="fab fa-whatsapp fa-2x" aria-hidden="true"></i></h5>
             </a>
       </div>
+        <div class="row">
+            <div>
+                <button onclick="generateCart()">
+                    Create order
+                </button>
+
+
+            </div>
+            <div>
+                <textarea>
+
+                </textarea>
+            </div>
+
+            <div>
+                <button onclick="copyToClipboard()">
+                    Copy to clipboard
+                </button>
+            </div>
+
+        </div>
     </div>
 </body>
 </html>
