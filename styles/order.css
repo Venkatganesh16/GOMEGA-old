@@ -1,0 +1,37 @@
+.tg {
+    border-collapse:collapse;
+    border-color:#ccc;
+    margin-left: auto;
+    margin-top: 100px;
+    margin-right: 10px;
+}
+.tg th {
+    background-color:#285A84;
+    color:white;
+    font-size:20px;
+    font-weight:bold;
+    overflow:hidden;
+    padding:20px 20px;
+    word-break:normal;
+    border: solid 2px black;
+    font-family:"Arial Black", Gadget, sans-serif !important;
+    vertical-align: top;
+}
+
+.table-data-item{
+    border: solid 2px black;
+    background: #C2EF7E;
+    font-family:"Courier New", Courier, monospace !important;
+    font-weight:bold;
+    vertical-align:top
+}
+.whatsapp h5 {
+    color: white;
+    background: #20b20f;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.table-bordered td {
+    border: 2px solid black;
+}
