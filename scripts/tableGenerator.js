@@ -1,3 +1,4 @@
+const phone = "+917093011926";
 // Todo : Complete this object to get all the items
 const inventory = [
 	{
@@ -25,7 +26,6 @@ const quantities = {
 	q2: "200g",
 	q3: "500g"
 };
-
 
 $(document).ready(function() {
 	// initialization code goes here
@@ -72,7 +72,6 @@ $(document).ready(function() {
 	}
 });
 
-
 function generateCart() {
 	const selectedItems = $("input:checked");
 	const cartData = [];
@@ -88,23 +87,17 @@ function generateCart() {
 			name: name,
 			quantity: quantity
 		});
-		
 	});
-	
 	let message = `Hello, here is the list of items I would like to purchase: \n`;
 	cartData.forEach(item => message += `${item.name} : ${item.quantity} \n`);
 	
-	const textarea = $("textarea")[0];
-	textarea.innerHTML = message;
-	copyToClipboard();
-}
-
-function copyToClipboard() {
-	const copyText = $("textarea")[0];
-	copyText.value = copyText.innerHTML.toString();
-	copyText.select();
-	copyText.setSelectionRange(0, 99999);
-	document.execCommand("copy");
+	return message;
 }
 
 
+
+function sendOrder(){
+	const message = encodeURI(generateCart());
+	const link = `https://api.whatsapp.com/send?phone=${phone}&text=${message}`;
+	window.open(link,"_blank");
+}
